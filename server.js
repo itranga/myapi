@@ -25,7 +25,7 @@ app.use(
         user     : 'ihann0syfqqekwz',
         password : 'aOfLAEu63bq0f6VND48jVe',
         database : 'backands148754424wgfimxv2',
-        debug    : false //set true if you wanna see debug logger
+        debug    : true //set true if you wanna see debug logger
     },'request')
 
 );
