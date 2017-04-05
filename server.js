@@ -32,7 +32,13 @@ app.use(
 
 app.get('/',function(req,res){
   req.getConnection(function(err,conn){
-      res.send('WelcomeAa');
+
+    var query = conn.query('SELECT * FROM users',function(err,rows){
+
+      res.send(rows);
+
+    });
+
   });
 
 });
