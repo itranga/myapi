@@ -31,7 +31,10 @@ app.use(
 );
 
 app.get('/',function(req,res){
-    res.send('WelcomeAa');
+  req.getConnection(function(err,conn){
+      res.send('WelcomeAa');
+  });
+
 });
 
 
