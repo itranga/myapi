@@ -35,7 +35,7 @@ app.get('/',function(req,res){
 
     var query = conn.query('SELECT * FROM users',function(err,rows){
 
-      res.send(rows);
+      res.send('WelcomeAa');
 
     });
 
