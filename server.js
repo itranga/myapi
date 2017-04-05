@@ -57,6 +57,8 @@ var curut = router.route('/user');
 //show the CRUD interface | GET
 curut.get(function(req,res,next){
 
+    res.render('user',{title:"RESTful Crud Example"});
+
 
     req.getConnection(function(err,conn){
 
